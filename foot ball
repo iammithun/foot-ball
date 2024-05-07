@@ -1,0 +1,31 @@
+import turtle
+
+# Set up the screen
+screen = turtle.Screen()
+screen.title("Football")
+screen.bgcolor("white")
+
+# Create a turtle
+football = turtle.Turtle()
+football.speed(0)  # Set the speed to the fastest
+
+# Draw the football shape
+football.color("black")
+football.begin_fill()
+football.left(90)
+football.forward(100)
+football.right(90)
+football.circle(50, 180)
+football.right(90)
+football.forward(200)
+football.right(90)
+football.circle(50, 180)
+football.right(90)
+football.forward(100)
+football.end_fill()
+
+# Hide the turtle
+football.hideturtle()
+
+# Keep the window open
+turtle.done()
